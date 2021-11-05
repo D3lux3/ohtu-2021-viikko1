@@ -27,7 +27,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_liiallinen_ottaminen_varastosta(self):
         self.varasto.lisaa_varastoon(1)
-        self.assertEquals(self.varasto.ota_varastosta(20), 1)
+        self.assertEquals(self.varasto.ota_varastosta(20), 100)
         self.assertEquals(self.varasto.saldo, 0.0)
 
     def test_ota_negatiivinen_varastosta(self):
